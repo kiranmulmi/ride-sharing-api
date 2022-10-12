@@ -1,6 +1,12 @@
 # Ride Sharing App (API)
 
 This is ride sharing app apis in Nodejs
+## Dependencies
+- Docker Environment
+- MongoDB access (local or mongodb atlas)
+- SMTP Server (username and password)
+- Google OAUTH (client id and secret)
+- Google Map Api Key
 
 ## Environment setup
 Create `.env` file on root folder and add following values
@@ -43,3 +49,16 @@ Run the following docker compose command to build and run the app
 ```sh
 docker-compose up -d --build
 ```
+
+## Seeding Riders
+Open docker container with following command
+```sh
+docker exec -it ride_sharing_api sh
+```
+Now run the following command to seed riders
+```shcd 
+npm run db:seed-rider riders
+```
+
+## API Documentation
+https://documenter.getpostman.com/view/10187762/2s83zmMNN1
