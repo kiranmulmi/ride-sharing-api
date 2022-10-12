@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Pickup Request</title>
+</head>
+
+<body>
+    <div style="width: 100%">
+        {{>header}}
+        <br>
+        <div style="padding:30px;">
+            <p>Hi {{riderName}},</p>
+            <br>
+            <p>Passenger Details:</p>
+            <p>Name: {{passengerName}}</p>
+            <p>Email: {{passengerEmail}}</p>
+            <p>Pickup Location: {{location}}</p>
+            <p>Destination: {{destination}}</p>
+            <h3>Amount: Rs {{calculatedPrice}}</h3>
+            <br />
+            <p><a href="{{url}}">Click here</a> to accept or reject this ride request.</p>
+
+        </div>
+        <br>
+        <br>
+        {{>footer}}
+    </div>
+</body>
+
+</html>

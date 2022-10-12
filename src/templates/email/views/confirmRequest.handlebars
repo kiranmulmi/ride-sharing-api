@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Pickup Request</title>
+</head>
+
+<body>
+    <div style="width: 100%">
+        {{>header}}
+        <br/>
+        <div style="padding:30px;">
+            <p>Hi {{passengerName}},</p>
+            <p>Your Ride is confirmed</p>
+            <br/>
+            <p>Rider Details:</p>
+            <p>Name: {{riderName}}</p>
+            <p>Email: {{riderEmail}}</p>
+            <p>Pickup Location: {{location}}</p>
+            <p>Destination: {{destination}}</p>
+            <h3>Amount: Rs {{calculatedPrice}}</h3>
+        </div>
+        <br/>
+        {{>footer}}
+    </div>
+</body>
+
+</html>
