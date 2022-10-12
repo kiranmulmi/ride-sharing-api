@@ -12,6 +12,5 @@ COPY package-lock.json ./
 RUN npm install nodemon -g --silent
 RUN npm install --silent
 
-
 COPY . ./
 CMD ["npm", "run", "dev"]
